@@ -1,0 +1,11 @@
+kokoro>=0.9.4
+soundfile>=0.12
+pydub>=0.25
+numpy>=1.24
+pymupdf>=1.23          # PDF text extraction (imported as fitz)
+# torch is installed separately — see README.md for the Blackwell-aware command.
+
+# Voice cloning (clone_tts.py) — optional, only needed if you use clone_tts.py.
+coqui-tts>=0.27         # XTTS-v2, CPML non-commercial license: https://coqui.ai/cpml
+transformers==4.57.1    # pinned: coqui-tts's XTTS/tortoise layers break on transformers 5.x
+torchcodec>=0.16        # required by torchaudio>=2.9 for audio IO (import-time only; clone_tts.py bypasses it for loading)

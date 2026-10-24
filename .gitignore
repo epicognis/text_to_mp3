@@ -1,0 +1,15 @@
+# Environment / caches
+.venv/
+__pycache__/
+*.pyc
+.claude/
+
+# Generated audio and voice samples
+*.mp3
+*.wav
+*.m4a
+
+# Working documents and logs
+convert/
+*.log
+butlin_2023_consciousness_in_ai_audio_summary.txt
